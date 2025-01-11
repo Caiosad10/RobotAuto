@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.9 on win32)" generated="2025-01-10T23:01:59.922345" rpa="false" schemaversion="5">
+<suite id="s1" name="Auto" source="C:\Users\sergi\OneDrive\Área de Trabalho\scripts vscode\Projetos\RobotAutomação\robot\auto.robot">
+<test id="s1-t1" name="Caso de teste Exemplo" line="8">
+<kw name="Acessar a pagina da amazon" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-10T23:02:01.045398" level="INFO">Opening browser 'edge' to base url 'https://www.amazon.com.br'.</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>url=${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-10T23:02:01.044398" elapsed="7.806956"/>
+</kw>
+<status status="PASS" start="2025-01-10T23:02:01.043352" elapsed="7.808002"/>
+</kw>
+<kw name="Pesquisar por livros do harry potter" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-10T23:02:08.853587" level="INFO">Typing text 'Harry Potter' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>locator=id:twotabsearchtextbox</arg>
+<arg>text=Harry Potter</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-10T23:02:08.852354" elapsed="0.765206"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-10T23:02:09.619557" level="INFO">Clicking element 'id:nav-search-submit-button'.</msg>
+<arg>locator=id:nav-search-submit-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-10T23:02:09.618558" elapsed="2.795740"/>
+</kw>
+<status status="PASS" start="2025-01-10T23:02:08.852354" elapsed="3.561944"/>
+</kw>
+<kw name="Validar o resultado" owner="resource">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=Resultados</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-10T23:02:12.415422" elapsed="0.049525"/>
+</kw>
+<status status="PASS" start="2025-01-10T23:02:12.415422" elapsed="0.049525"/>
+</kw>
+<status status="PASS" start="2025-01-10T23:02:01.041790" elapsed="11.424181"/>
+</test>
+<doc>Teste Exemplo</doc>
+<status status="PASS" start="2025-01-10T23:01:59.927424" elapsed="12.539569"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Auto">Auto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
